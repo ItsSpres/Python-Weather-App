@@ -75,7 +75,7 @@ def get_weather_by_zip(url):
             print(f"Weather Type: {responseFromApi['weather'][0]['main']}")
             print(f"Temperature: {responseFromApi['main']['temp']}°F")
 
-            # this is extra stuff I wanted to play around with
+            # this is extra stuff I wanted to play around with.
             city_name = tk.Label(text=f"{responseFromApi['name']}")
             city_name.pack()
             weatherType = tk.Label(text=f"{responseFromApi['weather'][0]['main']}")
